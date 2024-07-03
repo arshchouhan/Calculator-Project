@@ -1,0 +1,32 @@
+.body{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+.grid_container{
+    display:grid;
+    position: absolute;
+    top:135px;
+    grid-template-columns:repeat(4,320px);
+    grid-template-rows:150px 80px 80px 80px 80px 80px;
+    gap:1px;
+   
+}
+.grid_items{
+    /* border:solid black 2px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:25px;
+    cursor: pointer;
+}
+.display{
+    justify-self: right;
+    grid-column:span 4;
+    cursor:auto;
+    /* border:solid black 1px; */
+    font-size: 60px;
+}
+.equals{
+    grid-column:span 4;
+}
